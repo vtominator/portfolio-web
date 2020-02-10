@@ -1,3 +1,7 @@
+/* ---------------------------------------------- */
+/* BASIC SETUP */
+/* ---------------------------------------------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,5 +10,96 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  color: #eee;
+  width: 100%;
+  height: 100%;
+  background: url("/resources/img/background.jpg") no-repeat center fixed;
 }
 
+a {
+  text-decoration: none;
+  color: #eee;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+img {
+  width: 100%;
+}
+
+/* ---------------------------------------------- */
+/* HEADER */
+/* ---------------------------------------------- */
+
+header {
+  width: 100%;
+  height: 100vh;
+ 
+}
+
+.top-nav {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: -100vh;
+  background-color: #16162d;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  transition: : all 650ms cubic-bezier(1, 0, 0, 1);
+}
+
+.nav-list {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  margin: 0 2rem;
+}
+
+.nav-link {
+  font-size: 5rem;
+  padding: 1rem;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background: linear-gradient(to top, #ffe838, #fd57bf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.top-nav .open {
+  top: 0;
+  border-radius: initial;
+}
+
+.menu-toggler {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  width: 5rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mobile-nav-icon {
+  width: 100%;
+  cursor: pointer;
+}
+
+.mobile-nav-icon i {
+  font-size: 400%;
+  color: #fff;ű
+  cursor: pointer;
+}
