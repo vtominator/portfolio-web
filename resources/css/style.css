@@ -17,13 +17,17 @@ body {
   background: url("/resources/img/background.jpg") no-repeat center fixed;
 }
 
+section {
+  padding: 2rem;
+}
+
 a {
   text-decoration: none;
   color: #eee;
 }
 
 p {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: 300;
 }
 
@@ -42,6 +46,7 @@ img {
 .section-heading {
   text-align: center;
   margin-top: 15rem;
+  margin-bottom: 5rem;
 }
 
 .section-heading h1 {
@@ -81,6 +86,9 @@ img {
   font-weight: 300;
 }
 
+.has-margin-right {
+  margin-right: 3rem;
+}
 /* ---------------------------------------------- */
 /* HEADER */
 /* ---------------------------------------------- */
@@ -111,6 +119,7 @@ li {
   font-size: 1rem;
   padding: 0.5rem;
   text-transform: uppercase;
+  transition: background 250ms;
 }
 
 .nav-link:hover,
@@ -139,6 +148,7 @@ li {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  user-select: none;
   z-index: 1;
 }
 
@@ -195,6 +205,7 @@ li {
 .social-media i {
   font-size: 2rem;
   padding: 0 0.4em;
+  transition: background 250ms;
 }
 
 .social-media i:hover {
@@ -202,7 +213,7 @@ li {
 }
 
 /* ---------------------------------------------- */
-/* ABOUT */
+/* SKILLS */
 /* ---------------------------------------------- */
 
 .my-skills {
@@ -228,11 +239,12 @@ li {
 }
 
 .icon-container {
-  width: 10rem;
-  height: 10rem;
-  border: 8px solid black;
+  width: 8rem;
+  height: 8rem;
+  border: 5px solid black;
   background-color: rgba(255, 255, 255, 0.6);
   display: flex;
+  margin-bottom: 0.5rem;
   transform: rotate(45deg);
 }
 
@@ -240,5 +252,51 @@ li {
   color: black;
   font-size: 5rem;
   margin: auto;
-  transform: rotate(-45deg)
+  transform: rotate(-45deg);
 }
+
+/* ---------------------------------------------- */
+/* PORTFOLIO */
+/* ---------------------------------------------- */
+
+.portfolio-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.portfolio-item:last-child {
+  margin-bottom: 0;
+}
+
+.portfolio-img {
+  flex: 1;
+}
+
+.portfolio-description {
+  flex: 1;
+}
+
+.portfolio-description h6 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  opacity: 0.7;
+}
+
+.portfolio-description .cta {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  transform: translateX(-1rem);
+  transition: background 250ms;
+}
+
+.portfolio-description .cta:hover {
+  background: black;
+}
+
+
