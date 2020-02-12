@@ -402,3 +402,43 @@ input[type="submit"]:hover {
   background-color: black;
   color: #eee;
 }
+
+/* ---------------------------------------------- */
+/* FOOTER */
+/* ---------------------------------------------- */
+
+.copyright {
+  margin-top: 5rem;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem 0;
+  position: relative;
+}
+
+.up {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  background-color: #eee;
+  top: -1.5rem;
+  right: 5rem;
+  border-radius: 100%;
+  display: flex;
+  transition: background 250ms;
+  animation: pulse 2s infinite;
+}
+
+.up i {
+  color: black;
+  font-size: 1.5rem;
+  margin: auto;
+}
+
+.up:hover {
+  background: black;
+}
+
+.up:hover > i {
+  color: #eee;
+}
