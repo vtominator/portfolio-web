@@ -20,7 +20,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   nav .list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -33,12 +33,48 @@
     text-align: center;
   }
 
+  section:first-of-type {
+    padding: 0;
+  }
+
   .landing-text {
-    top: 50%;
     left: 0;
+    top: 60%;
     transform: translate(0, -50%);
     margin: 0 auto;
     width: 100%;
+  }
+
+  .profile-img {
+    width: 60%;
+    margin: 0;
+  }
+
+  .about-heading {
+    margin-bottom: 4rem;
+  }
+
+  .about-heading h1 {
+    font-size: 4rem;
+    opacity: 0.5;
+  }
+
+  .about-heading h6 {
+    font-size: 1.2rem;
+    font-weight: 200;
+  }
+
+  .about .container {
+    flex-direction: column;
+  }
+
+  .social-media {
+    margin-top: 1rem;
+  }
+
+  .section-heading {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
   }
 
   .section-heading h1 {
@@ -53,12 +89,18 @@
     bottom: -0.25rem;
   }
 
-  .about .container {
-    flex-direction: column;
+  .icon-container {
+    width: 6rem;
+    height: 6rem;
+    border: 3px solid black;
   }
 
-  .profile-img {
-    margin: 0;
+  .icon-container i {
+    font-size: 4rem;
+  }
+
+  .my-skills {
+    grid-gap: 2rem;
   }
 
   .portfolio-item {
@@ -66,23 +108,38 @@
   }
 
   .portfolio-img {
+    width: 85%;
     margin: 0 0 1.5rem 0;
   }
 
   .portfolio-description {
     margin: 0;
+    padding: 0 2rem;
     order: 1;
   }
 
   .timeline .date:before {
-    left: -18.5rem;
+    font-size: 0.8rem;
+    left: -15rem;
   }
 
   .timeline .date:after {
-    left: -5.65rem;
+    height: 0.8rem;
+    width: 0.8rem;
+    left: -2.5rem;
+  }
+
+  .timeline ul {
+    padding: 2rem;
   }
 
   form {
-    width: 100%;
+    width: 85%;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline-width: 2px;
   }
 }
