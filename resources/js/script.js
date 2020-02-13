@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  /* ---------------------------------------------- */
+  /* NAVIGATION */
+  /* ---------------------------------------------- */
+
   // Select all links with hashes
   $('a[href*="#"]')
     // Remove links that don't actually link to anything
@@ -29,11 +33,113 @@ $(document).ready(function() {
             },
             2000
           );
+        } else {
+          $("html, body").animate({ scrollTop: 0 }, 2000);
         }
       }
     });
 
-  $("#up").click(function() {
-    $("html, body").animate({ scrollTop: 0 }, 2000);
-  });
+  /* ---------------------------------------------- */
+  /* ANIMATIONS */
+  /* ---------------------------------------------- */
+
+  $(".js--wp-1").waypoint(
+    function() {
+      $(".js--wp-1").addClass("animated fadeInLeft");
+    },
+    {
+      offset: "50%"
+    }
+  );
+
+  $(".js--wp-2").waypoint(
+    function() {
+      $(".js--wp-2").addClass("animated fadeInRight");
+    },
+    {
+      offset: "80%"
+    }
+  );
+
+  $(".js--wp-3").waypoint(
+    function() {
+      const element = document.querySelector(".js--wp-3");
+      element.classList.add("animated", "fadeInRight");
+      element.addEventListener("animationend", function() {
+        const element = document.querySelector(".js--wp-4");
+        element.classList.add("animated", "fadeInRight");
+        element.addEventListener("animationend", function() {
+          const element = document.querySelector(".js--wp-5");
+          element.classList.add("animated", "fadeInRight");
+        });
+      });
+    },
+    {
+      offset: "80%"
+    }
+  );
+
+  $(".js--wp-6").waypoint(
+    function() {
+      $(".js--wp-6").addClass("animated fadeInLeft");
+    },
+    {
+      offset: "50%"
+    }
+  );
+
+  $(".js--wp-7").waypoint(
+    function() {
+      $(".js--wp-7").addClass("animated fadeInRight");
+    },
+    {
+      offset: "80%"
+    }
+  );
+
+  $(".js--wp-8").waypoint(
+    function() {
+      $(".js--wp-8").addClass("animated fadeInLeft");
+    },
+    {
+      offset: "80%"
+    }
+  );
+
+  $(".js--wp-9").waypoint(
+    function() {
+      $(".js--wp-9").addClass("animated fadeInRight");
+    },
+    {
+      offset: "50%"
+    }
+  );
+
+  $(".js--wp-10").waypoint(
+    function() {
+      $(".js--wp-10").addClass("animated fadeInLeft");
+    },
+    {
+      offset: "50%"
+    }
+  );
+
+  $(".js--wp-11").waypoint(
+    function() {
+      $(".js--wp-11").addClass("animated fadeInRight");
+    },
+    {
+      offset: "80%"
+    }
+  );
+
+
+  $(".js--wp-12").waypoint(
+    function() {
+      $(".js--wp-12").addClass("animated fadeInUp");
+    },
+    {
+      offset: "80%"
+    }
+  );
 });

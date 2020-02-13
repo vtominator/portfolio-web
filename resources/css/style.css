@@ -14,8 +14,10 @@ body {
   color: #eee;
   width: 100%;
   height: 100%;
-  background: url("/resources/img/background.jpg") no-repeat center fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/resources/img/background.jpg") no-repeat center fixed;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 section {
@@ -70,7 +72,7 @@ img {
 
 .section-heading h1:before {
   width: 10rem;
-  height: 4px;
+  height: 2px;
   border-radius: 0.8rem;
   background-color: black;
 }
@@ -78,9 +80,9 @@ img {
 .section-heading h1:after {
   width: 0.8rem;
   height: 0.8rem;
-  bottom: 0;
+  bottom: -0.1rem;
   border-radius: 30%;
-  background-color: #eee
+  background-color: #eee;
 }
 
 .section-heading h6 {
@@ -232,7 +234,7 @@ li {
 .icon-container {
   width: 8rem;
   height: 8rem;
-  border: 5px solid black;
+  border: 3px solid black;
   background-color: rgba(255, 255, 255, 0.6);
   display: flex;
   margin-bottom: 0.5rem;
@@ -269,6 +271,14 @@ li {
   flex: 1;
 }
 
+.portfolio-description.has-margin-right {
+  text-align: right;
+}
+
+.portfolio-description.has-margin-right .cta {
+  transform: translateX(1rem);
+}
+
 .portfolio-description h6 {
   font-size: 1rem;
   text-transform: uppercase;
@@ -296,7 +306,7 @@ li {
 
 .timeline ul {
   border-left: 4px solid black;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
   margin-left: 18%;
   position: relative;
   padding: 4rem;
@@ -346,7 +356,7 @@ li {
   content: "";
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.75);
   border-radius: 100%;
-  left: -114px;
+  left: -6.15rem;
   height: 1rem;
   width: 1rem;
   background-color: #313534;
@@ -401,7 +411,6 @@ input[type="submit"]:hover {
 .copyright {
   margin-top: 5rem;
   width: 100%;
-
   background-color: rgba(0, 0, 0, 0.7);
   padding: 1rem 0;
   position: relative;
@@ -437,4 +446,38 @@ input[type="submit"]:hover {
 
 .up:hover > i {
   color: #eee;
+}
+
+/* ---------------------------------------------- */
+/* ANIMATIONS */
+/* ---------------------------------------------- */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4,
+.js--wp-5,
+.js--wp-6,
+.js--wp-7,
+.js--wp-8,
+.js--wp-9,
+.js--wp-10,
+.js--wp-11,
+.js--wp-12 {
+  opacity: 0;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated,
+.js--wp-4.animated,
+.js--wp-5.animated,
+.js--wp-6.animated,
+.js--wp-7.animated,
+.js--wp-8.animated,
+.js--wp-9.animated,
+.js--wp-10.animated,
+.js--wp-11.animated,
+.js--wp-12.animated {
+  opacity: 1;
 }

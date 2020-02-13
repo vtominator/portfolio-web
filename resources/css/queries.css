@@ -16,7 +16,7 @@
   }
 
   .timeline .date:after {
-    left: -6.1rem;
+    left: -5.1rem;
   }
 }
 
@@ -86,7 +86,7 @@
   }
 
   .section-heading h1:after {
-    bottom: -0.25rem;
+    bottom: -0.30rem;
   }
 
   .icon-container {
@@ -141,5 +141,12 @@
   select:focus,
   textarea:focus {
     outline-width: 2px;
+  }
+
+  .up {
+    width: 2.5rem;
+    height: 2.5rem;
+    top: -1.25rem;
+    right: 2rem;
   }
 }
