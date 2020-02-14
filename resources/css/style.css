@@ -173,14 +173,15 @@ li {
   opacity: 0.5;
 }
 
-.about-heading h6 {
-  font-size: 1.7rem;
-  font-weight: 200;
-}
-
 .profile-img {
+  display: flex;
+  justify-content: center;
   flex: 1;
   margin-right: 5rem;
+}
+
+.profile-img img {
+  width: 40%;
 }
 
 .about-details {

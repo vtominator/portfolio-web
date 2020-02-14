@@ -48,7 +48,7 @@ $(document).ready(function() {
       $(".js--wp-1").addClass("animated fadeInLeft");
     },
     {
-      offset: "50%"
+      offset: "35%"
     }
   );
 
@@ -57,7 +57,7 @@ $(document).ready(function() {
       $(".js--wp-2").addClass("animated fadeInRight");
     },
     {
-      offset: "80%"
+      offset: "70%"
     }
   );
 
@@ -75,7 +75,7 @@ $(document).ready(function() {
       });
     },
     {
-      offset: "80%"
+      offset: "70%"
     }
   );
 
@@ -93,7 +93,7 @@ $(document).ready(function() {
       $(".js--wp-7").addClass("animated fadeInRight");
     },
     {
-      offset: "80%"
+      offset: "70%"
     }
   );
 
@@ -102,7 +102,7 @@ $(document).ready(function() {
       $(".js--wp-8").addClass("animated fadeInLeft");
     },
     {
-      offset: "80%"
+      offset: "70%"
     }
   );
 
@@ -129,7 +129,7 @@ $(document).ready(function() {
       $(".js--wp-11").addClass("animated fadeInRight");
     },
     {
-      offset: "80%"
+      offset: "70%"
     }
   );
 
@@ -139,7 +139,7 @@ $(document).ready(function() {
       $(".js--wp-12").addClass("animated fadeInUp");
     },
     {
-      offset: "80%"
+      offset: "70%"
     }
   );
 });
