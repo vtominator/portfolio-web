@@ -11,13 +11,54 @@
     font-size: 1rem;
   }
 
+  .section-heading {
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+  }
+
+  .profile-img {
+    margin: 4rem 0;
+  }
+
+  .profile-img img {
+    width: 50%;
+  }
+
+  .about-heading {
+    margin-bottom: 4rem;
+  }
+
+  .about-heading h1 {
+    font-size: 4rem;
+    opacity: 0.5;
+  } 
+
+
+  .about-heading h6 {
+    font-size: 1.2rem;
+    font-weight: 200;
+  }
+
+  .about .container {
+    flex-direction: column;
+  }
+
+  .social-media .list {
+    justify-content: space-between;
+  }
+
   .timeline ul {
     margin-left: 25%;
+  }  
+
+  .timeline .date:before {
+    left: -18rem;
   }
 
   .timeline .date:after {
     left: -5.1rem;
   }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -45,36 +86,8 @@
     width: 100%;
   }
 
-  .profile-img {
-    width: 60%;
-    margin: 0;
-  }
-
-  .about-heading {
-    margin-bottom: 4rem;
-  }
-
-  .about-heading h1 {
-    font-size: 4rem;
-    opacity: 0.5;
-  }
-
-  .about-heading h6 {
-    font-size: 1.2rem;
-    font-weight: 200;
-  }
-
-  .about .container {
-    flex-direction: column;
-  }
-
   .social-media {
     margin-top: 1rem;
-  }
-
-  .section-heading {
-    margin-top: 5rem;
-    margin-bottom: 3rem;
   }
 
   .section-heading h1 {
@@ -86,7 +99,7 @@
   }
 
   .section-heading h1:after {
-    bottom: -0.30rem;
+    bottom: -0.3rem;
   }
 
   .icon-container {
@@ -99,12 +112,24 @@
     font-size: 4rem;
   }
 
+  .services .container {
+    width: 100%;
+  }
+
   .my-skills {
     grid-gap: 2rem;
   }
 
   .portfolio-item {
     flex-direction: column;
+  }
+
+  .portfolio-description.has-margin-right {
+    text-align: left;
+  }
+  
+  .portfolio-description.has-margin-right .cta {
+    transform: translateX(-1rem);
   }
 
   .portfolio-img {
@@ -119,7 +144,7 @@
   }
 
   .timeline .date:before {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     left: -15rem;
   }
 
@@ -127,6 +152,14 @@
     height: 0.8rem;
     width: 0.8rem;
     left: -2.5rem;
+  }
+
+  .timeline h1 {
+    font-size: 1.2rem;
+  }
+
+  .timeline p {
+    font-size: 0.8rem;
   }
 
   .timeline ul {
@@ -148,5 +181,48 @@
     height: 2.5rem;
     top: -1.25rem;
     right: 2rem;
+  }
+
+  
+}
+@media screen and (max-width: 400px) {
+  .nav-link {
+    font-size: 0.8rem;
+  }
+
+  .about-heading h1 {
+    font-size: 3rem;
+    opacity: 0.5;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .landing-text h1{
+    font-size: 3rem;
+  }
+
+  .landing-text h6{
+    font-size: 0.8rem;
+  }
+
+  .section-heading {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .timeline .date:before {
+    font-size: 0.7rem;
+    left: -14rem;
+  }
+
+  .timeline .date:after {
+    left: -1.5rem;
+  }
+
+  .timeline ul {
+    margin-left: 30%;
+    padding: 1rem;
   }
 }

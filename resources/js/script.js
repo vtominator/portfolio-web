@@ -22,7 +22,7 @@ $(document).ready(function() {
         if (target.length) {
           // Only prevent default if animation is actually gonna happen
           if (target[0].id == "about") {
-            position = target.offset().top;
+            position = target.offset().top - 260;
           } else {
             position = target.offset().top + 215;
           }
@@ -48,7 +48,7 @@ $(document).ready(function() {
       $(".js--wp-1").addClass("animated fadeInLeft");
     },
     {
-      offset: "35%"
+      offset: "65%"
     }
   );
 
