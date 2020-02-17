@@ -1,10 +1,23 @@
 @media screen and (max-width: 768px) {
+  nav .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   li {
-    margin: 0 0.5rem;
+    margin: 0;
+    padding: 0.5rem 0;
+    font-size: 0.1rem;
+    text-align: center;
   }
 
   .landing-text h1 {
+    margin-top: 4rem;
     font-size: 4rem;
+  }
+
+  .landing-text h6 {
+    font-size: 0.9rem;
   }
 
   p {
@@ -31,8 +44,7 @@
   .about-heading h1 {
     font-size: 4rem;
     opacity: 0.5;
-  } 
-
+  }
 
   .about-heading h6 {
     font-size: 1.2rem;
@@ -48,8 +60,8 @@
   }
 
   .timeline ul {
-    margin-left: 25%;
-  }  
+    margin-left: 30%;
+  }
 
   .timeline .date:before {
     left: -18rem;
@@ -58,23 +70,10 @@
   .timeline .date:after {
     left: -5.1rem;
   }
-
 }
 
 @media screen and (max-width: 600px) {
-  nav .list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  li {
-    margin: 0;
-    padding: 0.5rem 0;
-    font-size: 0.1rem;
-    text-align: center;
-  }
-
-  section:first-of-type {
+    section:first-of-type {
     padding: 0;
   }
 
@@ -127,7 +126,7 @@
   .portfolio-description.has-margin-right {
     text-align: left;
   }
-  
+
   .portfolio-description.has-margin-right .cta {
     transform: translateX(-1rem);
   }
@@ -182,8 +181,6 @@
     top: -1.25rem;
     right: 2rem;
   }
-
-  
 }
 @media screen and (max-width: 400px) {
   .nav-link {
@@ -199,11 +196,11 @@
     font-size: 1rem;
   }
 
-  .landing-text h1{
+  .landing-text h1 {
     font-size: 3rem;
   }
 
-  .landing-text h6{
+  .landing-text h6 {
     font-size: 0.8rem;
   }
 

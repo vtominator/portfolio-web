@@ -24,7 +24,7 @@ $(document).ready(function() {
           if (target[0].id == "about") {
             position = target.offset().top - 260;
           } else {
-            position = target.offset().top + 215;
+            position = target.offset().top + 150;
           }
           event.preventDefault();
           $("html, body").animate(
@@ -133,10 +133,56 @@ $(document).ready(function() {
     }
   );
 
-
   $(".js--wp-12").waypoint(
     function() {
-      $(".js--wp-12").addClass("animated fadeInUp");
+      $(".js--wp-12").addClass("animated fadeInLeft");
+    },
+    {
+      offset: "70%"
+    }
+  );
+
+  $(".js--wp-13").waypoint(
+    function() {
+      $(".js--wp-13").addClass("animated fadeInRight");
+    },
+    {
+      offset: "70%"
+    }
+  );
+
+  $(".js--wp-14").waypoint(
+    function() {
+      $(".js--wp-14").addClass("animated fadeInLeft");
+    },
+    {
+      offset: "50%"
+    }
+  );
+
+  $(".js--wp-15").waypoint(
+    function() {
+      $(".js--wp-15").addClass("animated fadeInRight");
+    },
+    {
+      offset: "70%"
+    }
+  );
+
+
+
+  $(".js--wp-16").waypoint(
+    function() {
+      $(".js--wp-16").addClass("animated fadeInUp");
+    },
+    {
+      offset: "70%"
+    }
+  );
+
+  $(".js--wp-17").waypoint(
+    function() {
+      $(".js--wp-17").addClass("animated fadeInUp");
     },
     {
       offset: "70%"
