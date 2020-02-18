@@ -368,11 +368,6 @@ li {
 /* STUDIES */
 /* ---------------------------------------------- */
 
-.thesis:hover {
-  background: black;
-  padding: 0.2rem;
-}
-
 .languages {
   display: flex;
 }
