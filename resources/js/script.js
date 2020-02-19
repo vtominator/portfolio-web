@@ -63,13 +63,22 @@ $(document).ready(function() {
 
   $(".js--wp-3").waypoint(
     function() {
-      const element = document.querySelector(".js--wp-3");
+      $(".js--wp-3").addClass("animated fadeInUp");
+    },
+    {
+      offset: "70%"
+    }
+  );
+
+  $(".js--wp-4").waypoint(
+    function() {
+      const element = document.querySelector(".js--wp-4");
       element.classList.add("animated", "fadeInRight");
       element.addEventListener("animationend", function() {
-        const element = document.querySelector(".js--wp-4");
+        const element = document.querySelector(".js--wp-5");
         element.classList.add("animated", "fadeInRight");
         element.addEventListener("animationend", function() {
-          const element = document.querySelector(".js--wp-5");
+          const element = document.querySelector(".js--wp-6");
           element.classList.add("animated", "fadeInRight");
         });
       });
@@ -79,18 +88,9 @@ $(document).ready(function() {
     }
   );
 
-  $(".js--wp-6").waypoint(
-    function() {
-      $(".js--wp-6").addClass("animated fadeInLeft");
-    },
-    {
-      offset: "50%"
-    }
-  );
-
   $(".js--wp-7").waypoint(
     function() {
-      $(".js--wp-7").addClass("animated fadeInRight");
+      $(".js--wp-7").addClass("animated fadeInUp");
     },
     {
       offset: "70%"
@@ -102,7 +102,7 @@ $(document).ready(function() {
       $(".js--wp-8").addClass("animated fadeInLeft");
     },
     {
-      offset: "70%"
+      offset: "50%"
     }
   );
 
@@ -111,7 +111,7 @@ $(document).ready(function() {
       $(".js--wp-9").addClass("animated fadeInRight");
     },
     {
-      offset: "50%"
+      offset: "70%"
     }
   );
 
@@ -120,7 +120,7 @@ $(document).ready(function() {
       $(".js--wp-10").addClass("animated fadeInLeft");
     },
     {
-      offset: "50%"
+      offset: "70%"
     }
   );
 
@@ -129,7 +129,7 @@ $(document).ready(function() {
       $(".js--wp-11").addClass("animated fadeInRight");
     },
     {
-      offset: "70%"
+      offset: "50%"
     }
   );
 
@@ -138,7 +138,7 @@ $(document).ready(function() {
       $(".js--wp-12").addClass("animated fadeInLeft");
     },
     {
-      offset: "70%"
+      offset: "50%"
     }
   );
 
@@ -156,7 +156,7 @@ $(document).ready(function() {
       $(".js--wp-14").addClass("animated fadeInLeft");
     },
     {
-      offset: "50%"
+      offset: "70%"
     }
   );
 
@@ -169,20 +169,18 @@ $(document).ready(function() {
     }
   );
 
-
-
   $(".js--wp-16").waypoint(
     function() {
-      $(".js--wp-16").addClass("animated fadeInUp");
+      $(".js--wp-16").addClass("animated fadeInLeft");
     },
     {
-      offset: "70%"
+      offset: "50%"
     }
   );
 
   $(".js--wp-17").waypoint(
     function() {
-      $(".js--wp-17").addClass("animated fadeInUp");
+      $(".js--wp-17").addClass("animated fadeInRight");
     },
     {
       offset: "70%"
