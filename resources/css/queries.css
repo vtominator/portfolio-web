@@ -25,7 +25,7 @@
   }
 
   .section-heading {
-    margin-top: 8rem;
+    margin-top: 3rem;
     margin-bottom: 3rem;
   }
 
@@ -34,14 +34,14 @@
   }
 
   .profile-img img {
-    width: 50%;
+    width: 15rem;
   }
 
   .about-heading {
     margin-bottom: 4rem;
   }
 
-  .about-heading h1 {
+  .about-heading h2 {
     font-size: 4rem;
     opacity: 0.5;
   }
@@ -60,7 +60,7 @@
   }
 
   .timeline ul {
-    margin-left: 30%;
+    margin-left: 28%;
   }
 
   .timeline .date:before {
@@ -68,12 +68,12 @@
   }
 
   .timeline .date:after {
-    left: -5.1rem;
+    left: -4.65rem;
   }
 }
 
 @media screen and (max-width: 600px) {
-    section:first-of-type {
+  section:first-of-type {
     padding: 0;
   }
 
@@ -89,15 +89,15 @@
     margin-top: 1rem;
   }
 
-  .section-heading h1 {
+  .section-heading h2 {
     font-size: 2.5rem;
   }
 
-  .section-heading h1:before {
+  .section-heading h2:before {
     bottom: 0;
   }
 
-  .section-heading h1:after {
+  .section-heading h2:after {
     bottom: -0.3rem;
   }
 
@@ -143,7 +143,7 @@
   }
 
   .timeline .date:before {
-    font-size: 0.6rem;
+    font-size: 0.85rem;
     left: -15rem;
   }
 
@@ -153,7 +153,7 @@
     left: -2.5rem;
   }
 
-  .timeline h1 {
+  .timeline h2 {
     font-size: 1.2rem;
   }
 
@@ -187,7 +187,7 @@
     font-size: 0.8rem;
   }
 
-  .about-heading h1 {
+  .about-heading h2 {
     font-size: 3rem;
     opacity: 0.5;
   }
@@ -207,6 +207,10 @@
   .section-heading {
     margin-top: 5rem;
     margin-bottom: 2rem;
+  }
+
+  .timeline h2 {
+    font-size: 1.1rem;
   }
 
   .timeline .date:before {
